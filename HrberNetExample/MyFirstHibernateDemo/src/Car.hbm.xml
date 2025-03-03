@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.demo.Car">    
+      <meta attribute = "class-description">
+         This class contains the car detail. 
+      </meta>
+      
+      <id name = "carid" type = "int" column = "id">
+         <generator class="identity"/>
+      </id>
+      
+      <property name = "carmodel" column = "carmodel" type = "string"/>
+      <property name="color" column="color" type="string"></property>
+      <property name = "price" column = "price" type = "float"/>
+      
+   </class>
+</hibernate-mapping>
